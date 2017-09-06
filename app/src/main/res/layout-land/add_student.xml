@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.iedc.studentapp.add_student"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/form_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginEnd="98dp"
+        app:layout_constraintRight_toLeftOf="@+id/subbtn"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/gender"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="16dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:text="@string/name"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@color/colorAccent"
+        tools:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@+id/form_name"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="28dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/darker_gray"
+        android:clipToPadding="false"
+        android:dropDownWidth="wrap_content"
+        android:elevation="8dp"
+        android:fadeScrollbars="true"
+        android:paddingVertical="2dp"
+        android:pointerIcon="arrow"
+        android:popupBackground="@android:color/darker_gray"
+        android:soundEffectsEnabled="true"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/form_name"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/form_name"
+        app:layout_constraintLeft_toRightOf="@+id/form_name" />
+
+
+    <RadioButton
+        android:id="@+id/radmale"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="@string/male"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@+id/radfemale"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/radfemale"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/gender" />
+
+    <RadioButton
+        android:id="@+id/radfemale"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="134dp"
+        android:text="@string/female"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/subbtn"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toBottomOf="@+id/form_name"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/webdes" />
+
+    <Button
+        android:id="@+id/subbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/submit"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/radfemale" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:accessibilityTraversalAfter="@+id/text"
+        android:text="@string/interests"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/webdes"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:text="@string/web_designing"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintRight_toLeftOf="@+id/appdev"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:text="@string/photoshop"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintRight_toRightOf="@+id/webdes"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/webdes"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/appdev"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:text="@string/app_development"
+        android:layout_marginStart="186dp"
+        android:layout_marginEnd="186dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/subbtn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/webdes"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/anim"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:text="@string/animation"
+        android:layout_marginStart="72dp"
+        app:layout_constraintRight_toLeftOf="@+id/subbtn"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        android:layout_marginEnd="71dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/form_name"
+        app:layout_constraintTop_toTopOf="@+id/photo" />
+
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="@string/gender"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintRight_toRightOf="@+id/textView3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/radmale"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

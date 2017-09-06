@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Student App</string>
+    <string name="submit">SUBMIT</string>
+    <string name="interests">INTERESTS:</string>
+    <string name="name">NAME:</string>
+    <string name="gender">GENDER:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="web_designing">Web Designing</string>
+    <string name="photoshop">Photoshop</string>
+    <string name="app_development">App Development</string>
+    <string name="animation">Animation</string>
+    <string name="add_student">Add Student</string>
+    <string name="database">Student Database</string>
+    <string-array name="branchlist">
+        <item>Computer Science</item>
+        <item>Mechanical</item>
+        <item>Mechanical Production</item>
+        <item>Electronics and Communication</item>
+        <item>Electrical and Electronics</item>
+        <item>Chemical</item>
+        <item>Civil</item>
+        <item>Architecture</item>
+    </string-array>
+</resources>

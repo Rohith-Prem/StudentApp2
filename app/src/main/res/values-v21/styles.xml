@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mytheme2" parent="android:Theme.Material" >
+        <item name="android:colorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="addstud1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/accent_material_light_1</item>
+    </style>
+</resources>
