@@ -39,7 +39,7 @@ public class add_student extends Activity {
         SharedPreferences preferences;
         AlertDialog.Builder builder;
         Context c;
-
+        Intent goback;
 
 
 
@@ -59,7 +59,7 @@ public class add_student extends Activity {
             cbanim = (CheckBox) findViewById(R.id.anim);
             gender = (RadioGroup)findViewById(R.id.gendergrp);
 
-            final Intent goback = new Intent(add_student.this,MainActivity.class);
+            goback = new Intent(add_student.this,MainActivity.class);
             c = add_student.this.getApplicationContext();
 
             dbhand = new DatabaseHandler(c);
@@ -146,5 +146,17 @@ public class add_student extends Activity {
 
 
         }
+    @Override
+    public void onBackPressed() {
+
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(goback);
+                    finish();
+
+                }
+            }, 100);//waits for 1 second and then executes code inside run()
+    }
 
 }
