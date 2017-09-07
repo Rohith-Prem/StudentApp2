@@ -156,7 +156,7 @@ public class add_student extends Activity {
                     finish();
 
                 }
-            }, 100);//waits for 1 second and then executes code inside run()
+            },100);//waits for 1 second and then executes code inside run()
     }
 
 }
