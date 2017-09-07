@@ -103,7 +103,7 @@ public class add_student extends Activity {
                     //checking whether record with same name exists
                     Cursor result = studdetails.rawQuery("SELECT Name FROM " + table + " WHERE name =?", new String [] {nametxt});
                     result.moveToFirst();
-                    if (!result.isAfterLast() || nametxt==null) {
+                    if (!result.isAfterLast() || nametxt.isEmpty()) {
                         AlertDialog dialog = builder.create();
                         dialog.show();
                         return;
